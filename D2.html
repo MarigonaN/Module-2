@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and be available for the tutors by the end of the day
+- You can ask for tutor's help
+- You can google / use StackOverflow BUT we suggest you to use just the material provided
+- To test the page, just open it with your default browser.
+- Use Bootstrap4 classes to render the page.
+- Use correctly containers and rows in order to have a great display
+
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+
+NOTE:
+Most of the time, even the most expert of designers, need inspiration.
+Spend 30 minutes surfing the web and searching for the way of rapresenting album that you like the most.
+Could be the Amazon way, the Spotity or Apple music way or some other blog out there.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      
+     #row1 img{
+        border-radius: 30px;
+     }
+     .images{
+         border: 10px solid red;
+         padding: 10px;
+         margin: 10px;
+
+     }
+        
+     .panel-footer {
+  
+   left: 0;
+   bottom: 0;
+   padding: 30px;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+      /* EXERCISE 1
+            For all Albums we'd like to have a consistent style.
+            Create a class for:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+         */
+
+      /* EXERCISE 2 
+            Based on the artists you like the most, create a combination of colors 
+            to override bootstrap standard and make your website unique
+         */
+    </style>
+  </head>
+  <body>
+      <!-- EXERCISE 3 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must be linked to every section in your page
+        -->
+      
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+        <a class="navbar-brand" href="#">MUSIC</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#nav">Home <span class="sr-only">(current)</span></a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#row">Best of</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+
+        <h1 class="my-4" style="font-weight: 600; background-color: red; color: white;">
+          MY MUSIC
+        </h1>
+
+        <img src="1.jpg" class="img-fluid" alt="Responsive image">
+
+        <hr>
+
+      
+        
+
+    <div class="jumbotron jumbotron-fluid">
+       
+          <h1 class="display-4" >Quotes</h1>
+          <p class="lead">“Music gives a soul to the universe, wings to the mind, flight to the imagination
+            and life to everything.”</p>
+
+           <p class="lead" >“One good thing about music, when it hits you, you feel no pain.” ― Bob Marley</p>
+           <p class="lead">“Where words fail, music speaks.” ― Hans Christian Andersen</p> 
+           <p class="lead">“Music expresses that which cannot be said and on which it is impossible to be silent.” ― Victor Hugo</p> 
+           <p class="lead">“If you were music, I would listen to you ceaselessly, and my low spirits would brighten up.” ― Anna Akhmatova</p> 
+    </div>
+
+ <!-- EXERCISE 4
+            Create a Responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller window)
+            - 2 albums per row when you are on a small screen
+        -->
+
+    <h1 class="my-4">My favorite singers</h1>
+<div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4" id="row">
+    
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="5.jpg" alt="Rihanna" style="width:100%" >
+          <div class="caption">
+            <p>RIHANNA</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+        <div class="thumbnail">
+            <img src="4.jpg" alt="Bebe Rexha" style="width:100%">
+            <div class="caption">
+              <p>BEBE REXHA</p>
+            </div>
+        </div>
+      </div>
+
+    <div class="col-md-3">
+      <div class="thumbnail">
+        
+          <img src="2.jpg" alt="Rita Ora" style="width:100%">
+          <div class="caption">
+            <p>RITA ORA</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="3.jpg" alt="Dua Lipa" style="width:100%">
+          <div class="caption">
+            <p>DUA LIPA</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- EXERCISE 5
+            Create a section for the album review.
+            Pick one of your fav albums, and create a section with:
+            - Cover
+            - Title
+            - Band
+            - Lenght
+            - Genre
+            - Tracklist
+            - ... And whatever you think it's interesting about it!
+        -->
+
+  <h1 class="my-4">Favorite Songs - Links</h1>
+  <div class="row">
+      
+      <div class="col-md-3">
+        <div class="thumbnail">
+           <a href="https://www.youtube.com/watch?v=rnKbImRPhTE"> <img src="6.jpg" alt="Bob Dylan" style="width:100%" ></a>
+            <div class="caption">
+              <p>Bob Dylan-Knockin' on Heaven's Door</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="https://www.youtube.com/watch?v=XCQK6LmhYqc"> <img src="7.jpg" alt="Rita Ora" style="width:100%" ></a>
+              <div class="caption">
+                <p>Rita Ora-Let you love me</p>
+              </div>
+          </div>
+        </div>
+  
+      <div class="col-md-3">
+        <div class="thumbnail">
+          
+            <a href="https://www.youtube.com/watch?v=eIWgBDT9Ylw"> <img src="8.jpg" alt="Dua Lipa" style="width:100%" ></a>
+            <div class="caption">
+              <p>Dua Lipa-One Kiss</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+            <a href="https://www.youtube.com/watch?v=23k5062WrDw"> <img src="9.jpg" alt="Camila Cabello" style="width:100%" ></a>
+            <div class="caption">
+              <p>Camila Cabello-Señorita</p>
+            </div>
+        </div>
+      </div>
+    </div>
+<hr>
+
+            <!-- EXERCISE 6
+            Worst album list! Find out the music you don't really like or you find overrated and list it
+            in this "hall of shame" chart!
+            -->
+
+
+    <h1 class="my-4">The Worst Song Ever</h1>
+
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+      </div>
+    
+      <hr>
+     
+<!-- EXERCISE 7
+            Do you have any musician / band you admire or you are fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+        <h1 class="my-4" style="text-align: center;">Favorite Band</h1>
+
+        <div class="container text-center">
+            <h2>04 Band</h2>
+            
+            <p><em>I love their music...</em></p>
+            <img src="10.jpg" class="img-fluid" alt="Responsive image">
+
+            </div>
+         </div>
+        </br>
+
+         <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">04 Band</th>
+                <th scope="col">Song Titles</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>04 Band - Kthehu</td>
+                <td><a href="https://www.youtube.com/watch?v=_pNyPhPNYl4">Kthehu</a></td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>04 Band - Gocë Pejane</td>
+                <td><a href="https://www.youtube.com/watch?v=LGYf6BG49UY">Gocë Pejane</a></td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Jericho - Enderr e prerë</td>
+                <td><a href="https://www.youtube.com/watch?v=g1uw7eY3bxA&list=RD_pNyPhPNYl4&index=36">Enderr e prerë</a></td>
+                
+              </tr>
+            </tbody>
+          </table>
+
+ <!-- EXERCISE 8
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+
+        <h1 class="my-4" style="text-align: center; color: red;">Some Images</h1>
+
+<div class="images">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4" id="row1">
+    
+                    <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="5.jpg" alt="Rihanna" style="width:100%" >
+                        
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <img src="4.jpg" alt="Bebe Rexha" style="width:100%">
+                            
+                        </div>
+                    </div>
+                
+                    <div class="col-md-3">
+                    <div class="thumbnail">
+                        
+                        <img src="2.jpg" alt="Rita Ora" style="width:100%">
+                        
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="3.jpg" alt="Dua Lipa" style="width:100%" >
+                        
+                    </div>
+                    </div>
+        </div>
+
+
+                    
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4" id="row1">
+
+                    
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <img src="5.jpg" alt="Rihanna" style="width:100%" >
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <img src="4.jpg" alt="Bebe Rexha" style="width:100%">
+                            
+                        </div>
+                        </div>
+                
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                        
+                            <img src="2.jpg" alt="Rita Ora" style="width:100%">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <img src="3.jpg" alt="Dua Lipa" style="width:100%" >
+                        
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4" id="row1">
+
+                    
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="5.jpg" alt="Rihanna" style="width:100%" >
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="4.jpg" alt="Bebe Rexha" style="width:100%">
+                                
+                            </div>
+                            </div>
+                    
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                            
+                                <img src="2.jpg" alt="Rita Ora" style="width:100%">
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="3.jpg" alt="Dua Lipa" style="width:100%" >
+                            
+                            </div>
+                        </div>
+             </div>
+
+             <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4" id="row1">
+
+                    
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="5.jpg" alt="Rihanna" style="width:100%" >
+                    
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="4.jpg" alt="Bebe Rexha" style="width:100%">
+                        
+                    </div>
+                    </div>
+            
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                    
+                        <img src="2.jpg" alt="Rita Ora" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="3.jpg" alt="Dua Lipa" style="width:100%" >
+                    
+                    </div>
+                </div>
+     </div>
+
+     <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4" id="row1">
+
+                    
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="5.jpg" alt="Rihanna" style="width:100%" >
+            
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="4.jpg" alt="Bebe Rexha" style="width:100%">
+                
+            </div>
+            </div>
+    
+        <div class="col-md-3">
+            <div class="thumbnail">
+            
+                <img src="2.jpg" alt="Rita Ora" style="width:100%">
+                
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="3.jpg" alt="Dua Lipa" style="width:100%" >
+            
+            </div>
+        </div>
+</div>
+</div>
+
+   <!-- EXERCISE 9
+            Implement a footer with some information / social links
+        -->
+
+        <div class="panel-footer">
+            <footer>
+                <p>Marigona Nuhija</p>
+                <p>email:marigonanuhija@gmail.com</p>
+            </footer>
+        </div>
+
+               
+          
+     
+</div>
+
+   
+
+        
+
+
+        
+
+
+                        
+    
+
+   
+
+    
+
+ 
+
+    
+
+   
+
+ 
+    <!-- EXERCISE 10
+            Every time the user clicks on a album picture, toggle the album details
+        -->
+
+    <!-- EXERCISE 11
+            Add a button to each section. By clicking on it the section appears (if hidden) or disappears (if visible)
+        -->
+
+    <!--
+            EXERCISE 12
+            Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
+        -->
+
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
