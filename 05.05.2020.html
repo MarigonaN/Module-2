@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>05.05.2020</title>
+    <style>
+        #first{
+            
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 550px;
+            height: 400px;
+            
+            border-color:  black!important;
+            background-color: green;
+
+        }
+        .an{
+            background-color: transparent !important;
+            color: grey;
+            border-color: grey !important;
+        }
+        .background{
+            background-color: rgba(128, 128, 128, 0.137);
+            padding: 30px;
+        }
+      
+   
+    </style>
+    
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg" style=" background-color: steelblue;">
+            <a class="navbar-brand" href="#" style="color: white!important;">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" style="color: white!important;">Home <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <div class="container">
+            <h1 class="display-4 mt-4" style="text-align: center;">Exercise 1</h1>
+            <p style="text-align: center; font-size: 18px;" >Recreate this table just using Bootstrap4 classes or styling, without adding / removing any DOM element</p>
+            <div id="first" class="row row-cols-4 py-4 border rounded-left border-light ">
+                <div class="box">
+                    
+                </div>
+            </div>
+            <h1 class="display-4 mt-4" style="text-align: center;">Exercise 2</h1>
+            <p style="text-align: center; font-size: 18px; margin-left: 200px; margin-right: 200px;" >Create a pricing table to seel your product! Classical, 3 cards approach with 3 pricing. This is aclassical user/priced product
+            with new feature enabled for the pro/enterprise version</p>
+        <div class="card-deck">
+            
+            <div id="cards" class="card mt-4 " style="width: 18rem;">
+                <div class="card-header " style="font-size: 25px;">Free</div>
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 30px;"><b>$0</b> / mo</h5>
+                  <p class="card-text">10 users included </br> 2 GB storange </br>Email support </br>Help center access</p>
+                  <a href="#" class="btn btn-primary an" style="width: 200px; background-color: transparent; color: steelblue;">Sign up for free</a>
+                </div>
+              </div>
+
+              <div id="cards" class="card mt-4 " style="width: 18rem;">
+                <div class="card-header " style="font-size: 25px;">Pro</div>
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 30px;"><b>$15</b> / mo</h5>
+                  <p class="card-text">20 users included </br> 10 GB storange </br>Priority email support </br>Help center access</p>
+                  <a href="#" class="btn btn-primary" style="width: 200px;">Get started</a>
+                </div>
+              </div>
+            
+
+              <div id="cards" class="card mt-4 " style="width: 18rem;">
+                <div class="card-header" style="font-size: 25px;" >Enterprise</div>
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 30px;"><b>$29</b> / mo</h5>
+                  <p class="card-text">30 users included </br> 15 GB storange </br>Phone and email support </br>Help center access</p>
+                  <a href="#" class="btn btn-primary " style="width: 200px;">Contact us</a>
+                </div>
+              </div>
+        </div>
+        
+
+        <h1 class="display-4 mt-4" style="text-align: center;">Exercise 3</h1>
+            <p style="text-align: center; font-size: 18px;" >And this could be the video part of your website! Here you can add all the video content, displayed inside cards</p>
+     <div class="background">
+         
+           
+            <div class="card-deck">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1UW_jiBGWXHvcSs55ol7ITFt0l0lQGesuH2btzfiyAqun8xob&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary an">View</a>
+                      <a href="#" class="btn btn-primary an">Edit</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1UW_jiBGWXHvcSs55ol7ITFt0l0lQGesuH2btzfiyAqun8xob&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary an">View</a>
+                      <a href="#" class="btn btn-primary an">Edit</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1UW_jiBGWXHvcSs55ol7ITFt0l0lQGesuH2btzfiyAqun8xob&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary an">View</a>
+                      <a href="#" class="btn btn-primary an">Edit</a>
+                    </div>
+                  </div>
+
+                  
+            </div>
+
+            <div class="card-deck mt-4">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1UW_jiBGWXHvcSs55ol7ITFt0l0lQGesuH2btzfiyAqun8xob&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary an ">View</a>
+                      <a href="#" class="btn btn-primary an">Edit</a>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1UW_jiBGWXHvcSs55ol7ITFt0l0lQGesuH2btzfiyAqun8xob&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary an">View</a>
+                      <a href="#" class="btn btn-primary an">Edit</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1UW_jiBGWXHvcSs55ol7ITFt0l0lQGesuH2btzfiyAqun8xob&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary an">View</a>
+                      <a href="#" class="btn btn-primary an">Edit</a>
+                    </div>
+                  </div>
+
+                  
+            </div>
+
+            <div class="card-deck mt-4">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1UW_jiBGWXHvcSs55ol7ITFt0l0lQGesuH2btzfiyAqun8xob&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary an">View</a>
+                      <a href="#" class="btn btn-primary an">Edit</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1UW_jiBGWXHvcSs55ol7ITFt0l0lQGesuH2btzfiyAqun8xob&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary an">View</a>
+                      <a href="#" class="btn btn-primary an">Edit</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1UW_jiBGWXHvcSs55ol7ITFt0l0lQGesuH2btzfiyAqun8xob&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary an">View</a>
+                      <a href="#" class="btn btn-primary an">Edit</a>
+                    </div>
+                  </div>
+
+                  
+            </div>
+        </div>
+    
+        <h1 class="display-4 mt-4" style="text-align: center;">Exercise 4</h1>
+            <p style="text-align: center; font-size: 18px;" >Structure this section as a blog! Check the image and recreate as best as you can!</p>
+     
+            <div class="row">
+                
+                <div class="col-8">
+                    <h1>Page Heading</h1>
+
+
+                    <div class="card-deck">
+                        <div class="card">
+                          <img class="card-img-top" src="https://lh3.googleusercontent.com/proxy/9PJ9A7PWSX_uqLJeX_-MQr0eEFt0e6pbBw9NTjwbBp115ACiuqWNlf_elpOhdmW6h4lHwNRR7Hfxcs-J8YAz7aC7Lwos24zzV4MZM_4S-BUdywh9tdBm3Wc" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                          
+                          <div class="card-footer">
+                            <small class="text-muted">Posted on 05/05/2020</small>
+                          </div>
+                        </div>
+                </div>
+               
+
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 400px;">
+                    <h5 class="card-header">Find in my blog</h5>
+                    <div class="card-body">
+                      
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="card mt-4" style="width: 400px;">
+                    <h5 class="card-header">Categories</h5>
+                    <div class="card-body">
+                      <a href="#">Web design</a>
+                      <a href="#" style="margin-left: 20px;">Java Script</a></br>
+                      <a href="#">HTML</a>
+                      <a href="#" style="margin-left: 20px;">SAAS</a></br>
+                      <a href="#">CSS</a>
+                      <a href="#" style="margin-left: 20px;">Bootstrap4</a>
+                      
+                    </div>
+                  </div>
+                  <div class="card mt-4" style="width: 400px;">
+                    <h5 class="card-header">Widgets</h5>
+                    <p class="para" style="margin: 20px;">Usually here you can put all your custom widget to enhanche the user experience</p>
+                    <div class="card-body">
+                    
+                      
+                    </div>
+                  </div>
+            </div>
+            
+            </div>
+            <div class="row">
+
+                <div class="col-8 mt-4">
+                    <h1>Page Heading</h1>
+
+
+                    <div class="card-deck">
+                        <div class="card">
+                          <img class="card-img-top" src="https://lh3.googleusercontent.com/proxy/9PJ9A7PWSX_uqLJeX_-MQr0eEFt0e6pbBw9NTjwbBp115ACiuqWNlf_elpOhdmW6h4lHwNRR7Hfxcs-J8YAz7aC7Lwos24zzV4MZM_4S-BUdywh9tdBm3Wc" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                          
+                          <div class="card-footer">
+                            <small class="text-muted">Posted on 05/05/2020</small>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+
+                <div class="col-8 mt-4">
+                    <h1>Page Heading</h1>
+
+
+                    <div class="card-deck">
+                        <div class="card">
+                          <img class="card-img-top" src="https://lh3.googleusercontent.com/proxy/9PJ9A7PWSX_uqLJeX_-MQr0eEFt0e6pbBw9NTjwbBp115ACiuqWNlf_elpOhdmW6h4lHwNRR7Hfxcs-J8YAz7aC7Lwos24zzV4MZM_4S-BUdywh9tdBm3Wc" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                          
+                          <div class="card-footer">
+                            <small class="text-muted">Posted on 05/05/2020</small>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+
+            <nav aria-label="Page navigation example" class="mt-4">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Older</a></li>
+                  
+                  <li class="page-item"><a class="page-link" href="#">Newer</a></li>
+                </ul>
+              </nav>
+
+            
+
+              <h1 class="display-4 mt-4" style="text-align: center; background-color: rgba(128, 128, 128, 0.534);">Exercise 5</h1>
+              <p style="text-align: center; font-size: 18px; background-color: rgba(128, 128, 128, 0.534);" >Footer time! Never understimate the power of footers ;-)</p>
+       
+              <hr>
+
+                <div class="row" style="padding-bottom: 30px;">
+                    <div class="col-sm">
+                      <h5>Features</h5></br>
+                      <p>Cool stuff</p>
+                      <p>Random feature</p>
+                      <p>Team Feature</p>
+                      <p>Stuff for developers</p>
+                      <p>Another one</p>
+                      <p>Last time</p>
+                    </div>
+
+                    <div class="col-sm">
+                      <h5>Resources</h5>
+                      <p>Resource</p>
+                      <p>Resource name</p>
+                      <p>Another Resource</p>
+                      <p>Final resource</p>
+                      
+                    </div>
+
+                    <div class="col-sm">
+                      <h5>About</h5>
+                      <p>Team</p>
+                      <p>RLocation</p>
+                      <p>Privacy</p>
+                      <p>Terms</p>
+                    </div>
+
+                  </div>
+
+
+           
+            
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    </body>
+</html>
