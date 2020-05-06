@@ -343,7 +343,13 @@ footer{
        title.style.color = "blue";
       
 
-
+  // EX13) Write a function to change the background of the jumbotron
+       function jumbotron() {
+          let jumbB = document.getElementById('jumbotron');
+          jumbB.classList.remove('bg-dark');
+          jumbB.classList.add('bg-primary');
+         }
+         jumbotron();
 
 
        //EX11) Write a function to add a new link into the navbar
